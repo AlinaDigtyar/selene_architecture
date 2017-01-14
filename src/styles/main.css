@@ -1,0 +1,235 @@
+@import url(normalize.css);
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* use this class for block that has child floated elements */
+.ba-clearfix:before,
+.ba-clearfix:after {
+  content: '';
+  display: table;
+}
+
+.ba-clearfix:after {
+  clear: both;
+}
+
+/* hack for IE 6/7 */
+.ba-clearfix {
+  *zoom: 1;
+}
+
+/* classes for text */
+.ba-text-center {
+  text-align: center;
+}
+
+.ba-text-left {
+  text-align: left;
+}
+
+.ba-text-right {
+  text-align: right;
+}
+
+.ba-text-justify {
+  text-align: justify;
+}
+
+/* layout classes */
+.ba-container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.ba-float-left {
+  float: left;
+}
+
+.ba-float-right {
+  float: right;
+}
+
+/* ba grid defination */
+/* use this class for block that has child floated elements */
+.ba-grid:before,
+.ba-grid:after {
+  content: '';
+  display: table;
+}
+
+.ba-grid:after {
+  clear: both;
+}
+
+/* hack for IE 6/7 */
+.ba-grid {
+  *zoom: 1;
+}
+
+.ba-grid {
+  margin: 0 -15px;
+}
+
+.ba-grid + .ba-grid {
+  margin-top: 30px;
+}
+
+.ba-grid > [class*="ba-column-"] {
+  padding: 0 15px;
+}
+
+[class*="ba-column-"] {
+  float: left;
+}
+
+.ba-column-12 {
+  width: 100%;
+}
+
+.ba-column-11 {
+  width: 91.667%;
+}
+
+.ba-column-10 {
+  width: 83.334%;
+}
+
+.ba-column-9 {
+  width: 75%;
+}
+
+.ba-column-8 {
+  width: 66.667%;
+}
+
+.ba-column-7 {
+  width: 58.33333333%;
+}
+
+.ba-column-6 {
+  width: 50%;
+}
+
+.ba-column-5 {
+  width: 41.6666667%;
+}
+
+.ba-column-4 {
+  width: 33.334%;
+}
+
+.ba-column-3 {
+  width: 25%;
+}
+
+.ba-column-2 {
+  width: 16.667%;
+}
+
+.ba-column-1 {
+  width: 8.334%;
+}
+
+body {
+  background-color: #fff;
+}
+
+body, html {
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', 'Raleway' sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.025em;
+}
+
+.ba-wrapper {
+  width: 1142px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+a, button {
+  transition: all .1s ease-in;
+}
+
+/* Header */
+.ba-header__logo {
+  display: inline-block;
+  float: left;
+}
+
+.ba-navigation__list {
+  float: right;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  list-style-type: none;
+}
+
+.ba-navigation__link {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Section one */
+/* Section two */
+.ba-description {
+  color: #bbbecf;
+}
+
+/* Section three */
+.ba-slider__image {
+  position: relative;
+  align: middle;
+}
+
+.ba-slider__title {
+  position: absolute;
+  color: #fff;
+}
+
+.ba-slider__image--active {
+  border: 14px solid #95d2ec;
+}
+
+/* Section four */
+/* Section five */
+.ba-contactform {
+  color: #e6e7ec;
+}
+
+.ba-form-list {
+  list-style-type: none;
+}
+
+.ba-form-item__link--active:hover {
+  color: #a7cedf;
+}
+
+.ba-form {
+  width: 349px;
+}
+
+.ba-form__element {
+  width: 349px;
+  border-style: none;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+/* Footer */
+.ba-footer {
+  background-color: #0f0f0f;
+  height: 200px;
+  text-align: center;
+  color: #919191;
+  padding-right: auto;
+}
